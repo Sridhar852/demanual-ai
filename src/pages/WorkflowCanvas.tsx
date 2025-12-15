@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback } from 'react'
 import ReactFlow, {
   Node,
   addEdge,
@@ -119,9 +119,7 @@ export default function WorkflowCanvas() {
           <Background color="#e5e7eb" gap={16} />
           <Controls />
           <MiniMap
-            nodeColor={(node) => {
-              return '#6366f1'
-            }}
+            nodeColor={() => '#6366f1'}
             maskColor="rgba(0, 0, 0, 0.1)"
           />
         </ReactFlow>
