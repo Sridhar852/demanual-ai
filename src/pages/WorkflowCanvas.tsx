@@ -115,6 +115,12 @@ export default function WorkflowCanvas() {
           nodeTypes={nodeTypes}
           fitView
           className="bg-gray-50"
+          connectionLineStyle={{ stroke: '#6366f1', strokeWidth: 2 }}
+          defaultEdgeOptions={{ 
+            style: { stroke: '#6366f1', strokeWidth: 2 },
+            type: 'smoothstep',
+            animated: false
+          }}
         >
           <Background color="#e5e7eb" gap={16} />
           <Controls />
